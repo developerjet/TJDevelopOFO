@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompleteViewController" customModule="OFO_Development" customModuleProvider="target">
+            <connections>
+                <outlet property="labe12nd" destination="1ES-Ek-xBi" id="lZq-qg-aIl"/>
+                <outlet property="labe13rd" destination="NnA-Bc-5u3" id="0H8-5y-5g5"/>
+                <outlet property="label1st" destination="SOj-yu-arg" id="QOU-XH-nFK"/>
+                <outlet property="label4th" destination="oWl-cO-3Nf" id="UG3-Y0-O6J"/>
+                <outlet property="resultLabel" destination="9M5-CU-umG" id="4Fs-NX-Nry"/>
+                <outlet property="timerLabel" destination="Drd-8M-2Ck" id="FGF-ea-RJr"/>
+                <outlet property="view" destination="RwU-QM-Prg" id="Ffd-ab-v6j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RwU-QM-Prg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGF-Mo-VPR">
+                    <rect key="frame" x="20" y="94" width="335" height="267"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topImageBike_223x170" translatesAutoresizingMaskIntoConstraints="NO" id="4zz-ss-g7u">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="bpy-oB-fxK"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌号：20176666的解锁码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M5-CU-umG">
+                            <rect key="frame" x="77.5" y="140" width="180.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="骑行结束后，记得在手机上结束行程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufx-r4-ifW">
+                            <rect key="frame" x="53.5" y="240.5" width="228.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="O6U-IJ-60x">
+                            <rect key="frame" x="30" y="177" width="275" height="48.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOj-yu-arg" customClass="MyPerviewLabel" customModule="OFO_Development" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="46.5" height="48.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.99534088369999996" green="0.90870016809999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ES-Ek-xBi" customClass="MyPerviewLabel" customModule="OFO_Development" customModuleProvider="target">
+                                    <rect key="frame" x="76.5" y="0.0" width="46" height="48.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.99534088369999996" green="0.90870016809999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnA-Bc-5u3" customClass="MyPerviewLabel" customModule="OFO_Development" customModuleProvider="target">
+                                    <rect key="frame" x="152.5" y="0.0" width="46.5" height="48.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.99534088369999996" green="0.90870016809999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWl-cO-3Nf" customClass="MyPerviewLabel" customModule="OFO_Development" customModuleProvider="target">
+                                    <rect key="frame" x="229" y="0.0" width="46" height="48.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="37"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.99534088369999996" green="0.90870016809999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="oWl-cO-3Nf" firstAttribute="width" secondItem="SOj-yu-arg" secondAttribute="width" id="av9-UD-fXg"/>
+                                <constraint firstItem="1ES-Ek-xBi" firstAttribute="width" secondItem="SOj-yu-arg" secondAttribute="width" id="muG-Dk-6WO"/>
+                                <constraint firstItem="NnA-Bc-5u3" firstAttribute="width" secondItem="SOj-yu-arg" secondAttribute="width" id="sP1-FT-n3K"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4zz-ss-g7u" firstAttribute="top" secondItem="RGF-Mo-VPR" secondAttribute="top" id="INg-VR-r9n"/>
+                        <constraint firstItem="ufx-r4-ifW" firstAttribute="centerX" secondItem="O6U-IJ-60x" secondAttribute="centerX" id="JSq-cG-klT"/>
+                        <constraint firstItem="9M5-CU-umG" firstAttribute="centerX" secondItem="RGF-Mo-VPR" secondAttribute="centerX" id="Rtp-1L-ffy"/>
+                        <constraint firstAttribute="trailing" secondItem="4zz-ss-g7u" secondAttribute="trailing" id="RvL-xV-9e1"/>
+                        <constraint firstItem="O6U-IJ-60x" firstAttribute="centerX" secondItem="RGF-Mo-VPR" secondAttribute="centerX" id="Sox-yF-ePo"/>
+                        <constraint firstAttribute="trailing" secondItem="O6U-IJ-60x" secondAttribute="trailing" constant="30" id="aj1-rk-fFf"/>
+                        <constraint firstItem="ufx-r4-ifW" firstAttribute="top" secondItem="O6U-IJ-60x" secondAttribute="bottom" constant="15" id="bmI-KG-cre"/>
+                        <constraint firstItem="O6U-IJ-60x" firstAttribute="top" secondItem="9M5-CU-umG" secondAttribute="bottom" constant="20" id="ewN-uy-ORc"/>
+                        <constraint firstItem="4zz-ss-g7u" firstAttribute="leading" secondItem="RGF-Mo-VPR" secondAttribute="leading" id="llP-dR-gbi"/>
+                        <constraint firstItem="O6U-IJ-60x" firstAttribute="leading" secondItem="RGF-Mo-VPR" secondAttribute="leading" constant="30" id="vZx-Rf-MUF"/>
+                        <constraint firstItem="9M5-CU-umG" firstAttribute="top" secondItem="4zz-ss-g7u" secondAttribute="bottom" constant="20" id="wJ6-KF-SYT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有问题，" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-oL-4Mh">
+                    <rect key="frame" x="144" y="596.5" width="87" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvA-MX-jKz">
+                    <rect key="frame" x="227" y="590.5" width="70" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即检修"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120秒后开始计时，请检查车辆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-8M-2Ck">
+                    <rect key="frame" x="69.5" y="571" width="236" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cvA-MX-jKz" firstAttribute="centerY" secondItem="fZt-oL-4Mh" secondAttribute="centerY" id="7iq-ZD-cyC"/>
+                <constraint firstItem="cvA-MX-jKz" firstAttribute="leading" secondItem="fZt-oL-4Mh" secondAttribute="trailing" constant="-4" id="AyT-c0-v5B"/>
+                <constraint firstItem="fZt-oL-4Mh" firstAttribute="centerX" secondItem="RwU-QM-Prg" secondAttribute="centerX" id="JGY-E5-LNo"/>
+                <constraint firstAttribute="trailing" secondItem="RGF-Mo-VPR" secondAttribute="trailing" constant="20" id="MyB-wp-gpo"/>
+                <constraint firstItem="RGF-Mo-VPR" firstAttribute="top" secondItem="RwU-QM-Prg" secondAttribute="top" constant="94" id="NXZ-AM-OCs"/>
+                <constraint firstAttribute="bottom" secondItem="fZt-oL-4Mh" secondAttribute="bottom" constant="50" id="OFf-3g-ziu"/>
+                <constraint firstItem="Drd-8M-2Ck" firstAttribute="centerX" secondItem="fZt-oL-4Mh" secondAttribute="centerX" id="QP6-tv-GAH"/>
+                <constraint firstItem="RGF-Mo-VPR" firstAttribute="height" secondItem="RwU-QM-Prg" secondAttribute="height" multiplier="0.4" id="luN-fK-wNa"/>
+                <constraint firstItem="fZt-oL-4Mh" firstAttribute="top" secondItem="Drd-8M-2Ck" secondAttribute="bottom" constant="5" id="svf-Hj-v1m"/>
+                <constraint firstItem="RGF-Mo-VPR" firstAttribute="leading" secondItem="RwU-QM-Prg" secondAttribute="leading" constant="20" id="v1C-BT-GaL"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="topImageBike_223x170" width="223" height="170"/>
+    </resources>
+</document>

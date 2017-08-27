@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputCodeViewController" customModule="OFO_Development" customModuleProvider="target">
+            <connections>
+                <outlet property="canButton" destination="8Pv-Ph-6NI" id="rEz-EH-XOE"/>
+                <outlet property="inputTextFiled" destination="cLl-lg-Rbn" id="VH8-7U-uwj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peF-uo-kpv">
+                    <rect key="frame" x="20" y="94" width="335" height="267"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topImageBike_223x170" translatesAutoresizingMaskIntoConstraints="NO" id="YaL-bI-sfz">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="BMT-vx-3wK"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计费说明：1元/小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcR-6f-ZQ5">
+                            <rect key="frame" x="104.5" y="130" width="125.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入车牌号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-lg-Rbn">
+                            <rect key="frame" x="87.5" y="177" width="160" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="fjU-l1-Hwi"/>
+                                <constraint firstAttribute="height" constant="40" id="q98-Gq-Bbe"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入车牌号，获取解锁码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGw-Ho-0aB">
+                            <rect key="frame" x="89" y="237" width="157.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pv-Ph-6NI">
+                            <rect key="frame" x="252.5" y="177" width="40" height="40"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="eAA-os-4y8"/>
+                            </constraints>
+                            <state key="normal" image="nextArrow_enable_25x19"/>
+                            <connections>
+                                <action selector="canRiding:" destination="-1" eventType="touchUpInside" id="3Db-7Q-zUC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="gcR-6f-ZQ5" firstAttribute="top" secondItem="YaL-bI-sfz" secondAttribute="bottom" constant="10" id="0VU-1T-QAj"/>
+                        <constraint firstItem="YaL-bI-sfz" firstAttribute="leading" secondItem="peF-uo-kpv" secondAttribute="leading" id="0ax-pm-ttb"/>
+                        <constraint firstItem="8Pv-Ph-6NI" firstAttribute="leading" secondItem="cLl-lg-Rbn" secondAttribute="trailing" constant="5" id="0pr-on-TNO"/>
+                        <constraint firstItem="gcR-6f-ZQ5" firstAttribute="centerX" secondItem="peF-uo-kpv" secondAttribute="centerX" id="2ME-Lb-9oc"/>
+                        <constraint firstItem="8Pv-Ph-6NI" firstAttribute="centerY" secondItem="cLl-lg-Rbn" secondAttribute="centerY" id="6WR-nh-cdY"/>
+                        <constraint firstItem="cLl-lg-Rbn" firstAttribute="top" secondItem="gcR-6f-ZQ5" secondAttribute="bottom" constant="30" id="6co-E8-34Y"/>
+                        <constraint firstItem="cLl-lg-Rbn" firstAttribute="centerX" secondItem="peF-uo-kpv" secondAttribute="centerX" id="9vh-0U-eMl"/>
+                        <constraint firstItem="pGw-Ho-0aB" firstAttribute="top" secondItem="cLl-lg-Rbn" secondAttribute="bottom" constant="20" id="MVR-0Q-qxh"/>
+                        <constraint firstAttribute="trailing" secondItem="YaL-bI-sfz" secondAttribute="trailing" id="Ruz-TI-xFd"/>
+                        <constraint firstItem="pGw-Ho-0aB" firstAttribute="centerX" secondItem="cLl-lg-Rbn" secondAttribute="centerX" id="lpa-To-tPF"/>
+                        <constraint firstItem="YaL-bI-sfz" firstAttribute="top" secondItem="peF-uo-kpv" secondAttribute="top" id="ouU-Ax-NTx"/>
+                        <constraint firstItem="8Pv-Ph-6NI" firstAttribute="height" secondItem="cLl-lg-Rbn" secondAttribute="height" id="zvf-uE-5ll"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="peF-uo-kpv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="4gN-wx-9i8"/>
+                <constraint firstAttribute="trailing" secondItem="peF-uo-kpv" secondAttribute="trailing" constant="20" id="Kc8-9c-ajB"/>
+                <constraint firstItem="peF-uo-kpv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="Ox6-qG-eXE"/>
+                <constraint firstItem="peF-uo-kpv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="URz-Pn-FNE"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="nextArrow_enable_25x19" width="25" height="19"/>
+        <image name="topImageBike_223x170" width="223" height="170"/>
+    </resources>
+</document>

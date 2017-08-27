@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+  platform :ios, ‘8.0’
+
+target 'OFO_Development' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+	
+	pod 'Kingfisher', '~> 3.10.3'
+	pod 'SVProgressHUD', '~> 2.1.2'
+	pod 'MJExtension', '~> 3.0.13'
+	pod 'SnapKit', '~> 3.2.0'
+	pod 'Alamofire', '~> 4.5.0'
+	pod 'MMDrawerController', '~> 0.6.0'
+	pod 'FTIndicator', '~> 1.2.1'
+	pod 'swiftScan', '~> 1.1.1'
+	pod 'AMap3DMap'
+	pod 'AMapSearch'
+	pod 'AMapLocation'
+	pod 'AMapNavi'
+	pod 'SwiftTimer', '~> 1.0.3'
+	pod 'AVOSCloud'
+	pod 'SwiftyJSON', '~> 3.1.4'
+
+end

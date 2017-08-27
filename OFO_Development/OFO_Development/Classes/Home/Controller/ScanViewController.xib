@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanViewController" customModule="OFO_Development" customModuleProvider="target">
+            <connections>
+                <outlet property="panelView" destination="Gyb-P3-4hd" id="p7o-cT-bGu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-P3-4hd">
+                    <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-ae-hpd">
+                            <rect key="frame" x="60" y="42" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="CdS-XL-pB2"/>
+                                <constraint firstAttribute="width" secondItem="cLl-ae-hpd" secondAttribute="height" multiplier="1:1" id="H1M-lx-1ew"/>
+                            </constraints>
+                            <state key="normal" image="yellowcar_31x31"/>
+                            <connections>
+                                <action selector="inputClickWithButton:" destination="-1" eventType="touchUpInside" id="tbX-Lp-Jpz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手动输入车牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-UO-3bE">
+                            <rect key="frame" x="45" y="97" width="80" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-eP-txA">
+                            <rect key="frame" x="265" y="50.5" width="50" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="w0i-eP-txA" secondAttribute="height" multiplier="83:54" id="Mqm-uU-7VK"/>
+                            </constraints>
+                            <state key="normal" image="btn_torch_disable_21x21"/>
+                            <state key="selected" image="btn_enableTorch_w_21x21"/>
+                            <connections>
+                                <action selector="lightClickWithButton:" destination="-1" eventType="touchUpInside" id="lCv-vj-K5s"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手电筒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCW-co-SdZ">
+                            <rect key="frame" x="270" y="97" width="40" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NWb-UO-3bE" firstAttribute="centerX" secondItem="cLl-ae-hpd" secondAttribute="centerX" id="1bL-ch-fhr"/>
+                        <constraint firstItem="w0i-eP-txA" firstAttribute="centerY" secondItem="cLl-ae-hpd" secondAttribute="centerY" id="5JI-PZ-0KD"/>
+                        <constraint firstItem="rCW-co-SdZ" firstAttribute="centerX" secondItem="w0i-eP-txA" secondAttribute="centerX" id="9sE-2G-5Vy"/>
+                        <constraint firstItem="rCW-co-SdZ" firstAttribute="centerY" secondItem="NWb-UO-3bE" secondAttribute="centerY" id="FOz-YV-uhx"/>
+                        <constraint firstItem="w0i-eP-txA" firstAttribute="width" secondItem="cLl-ae-hpd" secondAttribute="width" id="Htx-5x-Rjh"/>
+                        <constraint firstItem="NWb-UO-3bE" firstAttribute="top" secondItem="cLl-ae-hpd" secondAttribute="bottom" constant="5" id="K6s-r5-9TT"/>
+                        <constraint firstItem="cLl-ae-hpd" firstAttribute="leading" secondItem="Gyb-P3-4hd" secondAttribute="leading" constant="60" id="Pgh-lf-wud"/>
+                        <constraint firstAttribute="trailing" secondItem="w0i-eP-txA" secondAttribute="trailing" constant="60" id="l5I-6y-Udw"/>
+                        <constraint firstItem="cLl-ae-hpd" firstAttribute="centerY" secondItem="Gyb-P3-4hd" secondAttribute="centerY" id="pan-Rp-oqq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gyb-P3-4hd" secondAttribute="trailing" id="6fy-M2-gJK"/>
+                <constraint firstAttribute="bottom" secondItem="Gyb-P3-4hd" secondAttribute="bottom" id="8SZ-bH-Sxa"/>
+                <constraint firstItem="Gyb-P3-4hd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="gLM-0E-6I2"/>
+                <constraint firstItem="Gyb-P3-4hd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gZC-sl-WUq"/>
+            </constraints>
+            <point key="canvasLocation" x="54.5" y="146.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_enableTorch_w_21x21" width="21" height="21"/>
+        <image name="btn_torch_disable_21x21" width="21" height="21"/>
+        <image name="yellowcar_31x31" width="31" height="31"/>
+    </resources>
+</document>
